@@ -1,0 +1,18 @@
+plugins {
+  id 'groovy-gradle-plugin'
+}
+
+repositories {
+  gradlePluginPortal()
+}
+
+// we need to declare dependencies for some plugins used in build scripts here in buildSrc
+// (e.g. common-conventions.gradle),
+dependencies {
+  // adds the org.jetbrains.kotlin.jvm plugin
+  implementation 'org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.21'
+  // adds the org.springframework.boot plugin
+  implementation 'org.springframework.boot:org.springframework.boot.gradle.plugin:3.5.0'
+  // adds the org.jetbrains.kotlin.plugin.spring plugin
+  implementation 'org.jetbrains.kotlin.plugin.spring:org.jetbrains.kotlin.plugin.spring.gradle.plugin:2.1.21'
+}

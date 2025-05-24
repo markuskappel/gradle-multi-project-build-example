@@ -1,0 +1,9 @@
+plugins {
+  // Apply the common convention plugin for shared build configuration
+  id 'common-conventions'
+}
+
+dependencies {
+  // add the dependency for spring's RestClient
+  implementation 'org.springframework:spring-web'
+}
